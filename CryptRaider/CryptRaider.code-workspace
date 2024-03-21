@@ -1,0 +1,1315 @@
+{
+	"folders": [
+		{
+			"name": "CryptRaider",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "C:\\Program Files (x86)\\UE_5.3"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "CryptRaider Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"Win64",
+					"Debug",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"Win64",
+					"Debug",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaider Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CryptRaider",
+					"Win64",
+					"Debug",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"Win64",
+					"DebugGame",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"Win64",
+					"DebugGame",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaider Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CryptRaider",
+					"Win64",
+					"DebugGame",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"Win64",
+					"Development",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"Win64",
+					"Development",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaider Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CryptRaider",
+					"Win64",
+					"Development",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"Win64",
+					"Test",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"Win64",
+					"Test",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaider Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CryptRaider",
+					"Win64",
+					"Test",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"Win64",
+					"Shipping",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"Win64",
+					"Shipping",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaider Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CryptRaider",
+					"Win64",
+					"Shipping",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Linux Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"Linux",
+					"Debug",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"Linux",
+					"Debug",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaider Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Linux Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CryptRaider",
+					"Linux",
+					"Debug",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"Linux",
+					"DebugGame",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"Linux",
+					"DebugGame",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaider Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CryptRaider",
+					"Linux",
+					"DebugGame",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Linux Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"Linux",
+					"Development",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"Linux",
+					"Development",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaider Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Linux Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CryptRaider",
+					"Linux",
+					"Development",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Linux Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"Linux",
+					"Test",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Linux Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"Linux",
+					"Test",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaider Linux Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Linux Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CryptRaider",
+					"Linux",
+					"Test",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Linux Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"Linux",
+					"Shipping",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Linux Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"Linux",
+					"Shipping",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaider Linux Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Linux Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CryptRaider",
+					"Linux",
+					"Shipping",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider LinuxArm64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"LinuxArm64",
+					"Debug",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider LinuxArm64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"LinuxArm64",
+					"Debug",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaider LinuxArm64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider LinuxArm64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CryptRaider",
+					"LinuxArm64",
+					"Debug",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider LinuxArm64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"LinuxArm64",
+					"DebugGame",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider LinuxArm64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"LinuxArm64",
+					"DebugGame",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaider LinuxArm64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider LinuxArm64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CryptRaider",
+					"LinuxArm64",
+					"DebugGame",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider LinuxArm64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"LinuxArm64",
+					"Development",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider LinuxArm64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"LinuxArm64",
+					"Development",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaider LinuxArm64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider LinuxArm64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CryptRaider",
+					"LinuxArm64",
+					"Development",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider LinuxArm64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"LinuxArm64",
+					"Test",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider LinuxArm64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"LinuxArm64",
+					"Test",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaider LinuxArm64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider LinuxArm64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CryptRaider",
+					"LinuxArm64",
+					"Test",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider LinuxArm64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"LinuxArm64",
+					"Shipping",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider LinuxArm64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaider",
+					"LinuxArm64",
+					"Shipping",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaider LinuxArm64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider LinuxArm64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CryptRaider",
+					"LinuxArm64",
+					"Shipping",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaiderEditor Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaiderEditor",
+					"Win64",
+					"Debug",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaiderEditor Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaiderEditor",
+					"Win64",
+					"Debug",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaiderEditor Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaiderEditor Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CryptRaiderEditor",
+					"Win64",
+					"Debug",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaiderEditor Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaiderEditor",
+					"Win64",
+					"DebugGame",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaiderEditor Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaiderEditor",
+					"Win64",
+					"DebugGame",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaiderEditor Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaiderEditor Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CryptRaiderEditor",
+					"Win64",
+					"DebugGame",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaiderEditor Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaiderEditor",
+					"Win64",
+					"Development",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaiderEditor Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaiderEditor",
+					"Win64",
+					"Development",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaiderEditor Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaiderEditor Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CryptRaiderEditor",
+					"Win64",
+					"Development",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaiderEditor Linux Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaiderEditor",
+					"Linux",
+					"Debug",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaiderEditor Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaiderEditor",
+					"Linux",
+					"Debug",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaiderEditor Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaiderEditor Linux Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CryptRaiderEditor",
+					"Linux",
+					"Debug",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaiderEditor Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaiderEditor",
+					"Linux",
+					"DebugGame",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaiderEditor Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaiderEditor",
+					"Linux",
+					"DebugGame",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaiderEditor Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaiderEditor Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CryptRaiderEditor",
+					"Linux",
+					"DebugGame",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaiderEditor Linux Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaiderEditor",
+					"Linux",
+					"Development",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaiderEditor Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CryptRaiderEditor",
+					"Linux",
+					"Development",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaiderEditor Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaiderEditor Linux Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CryptRaiderEditor",
+					"Linux",
+					"Development",
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch CryptRaider (Debug)",
+				"request": "launch",
+				"program": "D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+				"preLaunchTask": "CryptRaider Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "C:\\Program Files (x86)\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files (x86)\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch CryptRaider (DebugGame)",
+				"request": "launch",
+				"program": "D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+				"preLaunchTask": "CryptRaider Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "C:\\Program Files (x86)\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files (x86)\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch CryptRaider (Development)",
+				"request": "launch",
+				"program": "D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\Binaries\\Win64\\UnrealGame.exe",
+				"preLaunchTask": "CryptRaider Win64 Development Build",
+				"args": [
+				],
+				"cwd": "C:\\Program Files (x86)\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files (x86)\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch CryptRaider (Test)",
+				"request": "launch",
+				"program": "D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+				"preLaunchTask": "CryptRaider Win64 Test Build",
+				"args": [
+				],
+				"cwd": "C:\\Program Files (x86)\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files (x86)\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch CryptRaider (Shipping)",
+				"request": "launch",
+				"program": "D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+				"preLaunchTask": "CryptRaider Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "C:\\Program Files (x86)\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files (x86)\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch CryptRaiderEditor (Debug)",
+				"request": "launch",
+				"program": "C:\\Program Files (x86)\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+				"preLaunchTask": "CryptRaiderEditor Win64 Debug Build",
+				"args": [
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject"
+				],
+				"cwd": "C:\\Program Files (x86)\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files (x86)\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch CryptRaiderEditor (DebugGame)",
+				"request": "launch",
+				"program": "C:\\Program Files (x86)\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+				"preLaunchTask": "CryptRaiderEditor Win64 DebugGame Build",
+				"args": [
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject"
+				],
+				"cwd": "C:\\Program Files (x86)\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files (x86)\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch CryptRaiderEditor (Development)",
+				"request": "launch",
+				"program": "C:\\Program Files (x86)\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+				"preLaunchTask": "CryptRaiderEditor Win64 Development Build",
+				"args": [
+					"D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject"
+				],
+				"cwd": "C:\\Program Files (x86)\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files (x86)\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files (x86)\\UE_5.3"
+				}
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Win64 Development Build",
+				"program": "C:\\Program Files (x86)\\UE_5.3\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=D:\\Personal Projects\\Unreal Engine 5\\CryptRaider\\CryptRaider\\CryptRaider.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "externalTerminal",
+				"stopAtEntry": false,
+				"cwd": "C:\\Program Files (x86)\\UE_5.3"
+			}
+		]
+	}
+}
